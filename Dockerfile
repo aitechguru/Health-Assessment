@@ -20,9 +20,9 @@ COPY . .
 
 
 # Expose the server port
-EXPOSE 8080
+EXPOSE 8090
 
 # Command to start the server
 
 # CMD ["flask", "run", "--host = 0.0.0.0"]
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:8090", "app:app"]
